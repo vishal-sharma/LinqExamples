@@ -17,14 +17,14 @@ namespace LinqExxamplesTests
         public void TestEmployeesWithSalaryGreaterThan100K()
         {
             var employeesWithSalaryGreaterThan100K = EmployeeInfo.EmployeesWithSalaryGreaterThan100K(employees);
-            Assert.Equal(2, employeesWithSalaryGreaterThan100K.Count());
+            Assert.Equal(employeesWithSalaryGreaterThan100K.Count(), 2);
         }
 
         [Fact]
         public void TestAverageConsultantSalaryInBrisbane()
         {
             var averageConsultantSalaryInBrisbane = EmployeeInfo.AverageConsultantSalaryInBrisbane(employees);
-            Assert.Equal(110000, averageConsultantSalaryInBrisbane);
+            Assert.Equal(averageConsultantSalaryInBrisbane, 100000);
         }
     }
 }
