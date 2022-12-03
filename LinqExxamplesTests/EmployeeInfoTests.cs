@@ -24,7 +24,7 @@ namespace LinqExxamplesTests
         public void TestAverageConsultantSalaryInBrisbane()
         {
             var averageConsultantSalaryInBrisbane = EmployeeInfo.AverageConsultantSalaryInBrisbane(employees);
-            Assert.Equal(110000, averageConsultantSalaryInBrisbane);
+            Assert.Equal(100000, averageConsultantSalaryInBrisbane);
         }
     }
 }
