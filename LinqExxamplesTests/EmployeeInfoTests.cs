@@ -4,13 +4,16 @@ namespace LinqExxamplesTests
 {
     public class EmployeeInfoTests
     {
-        IEnumerable<Employee> employees = new Employee[5]
+        IEnumerable<Employee> employees = new Employee[8]
             {
                 new Employee ( firstName: "Alex", city: "Brisbane", salary: 100000, level: "Consultant"),
                 new Employee ( firstName: "Khoi", city: "Brisbane", salary: 120000, level: "Consultant"),
                 new Employee ( firstName: "Sam",  city: "Brisbane", salary: 80000, level: "Analyst"),
                 new Employee ( firstName: "Deepinder", city: "Melbourne", salary: 120000, level: "Consultant"),
-                new Employee ( firstName: "Nicky", city: "Sydney", salary: 100000, level: "Analyst")
+                new Employee ( firstName: "Nicky", city: "Sydney", salary: 100000, level: "Analyst"),
+                new Employee ( firstName: "Bernard", city: "Perth", salary: 55000, level: "Junior Developer"),
+                new Employee ( firstName: "Sarah", city: "Perth", salary: 100000, level: "Analyst"),
+                new Employee ( firstName: "John", city: "Perth", salary: 80000, level: "Developer")
             };
 
         [Fact]

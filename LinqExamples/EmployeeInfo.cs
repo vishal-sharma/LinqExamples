@@ -21,12 +21,22 @@
         }
         public static double TotalSalariesInPerth(IEnumerable<Employee> employees)
         {
-            return 0;
+            var employeesInPerth = from emp in employees
+                                   where emp.City == "Perth"
+                                   select emp;
+            var TotalSalariesInPerth = EmployeeInfoHelper.TotalSalary(employeesInPerth);
+
+            return TotalSalariesInPerth;
         }
 
         public static double ConsultantSalaryRange(IEnumerable<Employee> employees)
         {
-            return 0;
+            var consultants = from emp in employees
+                              where emp.Level == "Consultant"
+                              select emp;
+            var avgSalaryForConsultants = EmployeeInfoHelper.AverageSalary(consultants);
+            
+            return avgSalaryForConsultants;
         }
     }
 }
