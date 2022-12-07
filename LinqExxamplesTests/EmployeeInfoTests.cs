@@ -26,5 +26,19 @@ namespace LinqExxamplesTests
             var averageConsultantSalaryInBrisbane = EmployeeInfo.AverageConsultantSalaryInBrisbane(employees);
             Assert.Equal(110000, averageConsultantSalaryInBrisbane);
         }
+
+        [Fact]
+        public void TestTotalSalaryInPerth()
+        {
+            var totalSalaryInPerth = EmployeeInfo.TotalSalariesInPerth(employees);
+            Assert.Equal(235000, totalSalaryInPerth);
+        }
+
+        [Fact]
+        public void TestAverageConsultantSalaryRangeIsBetween100Kand120K()
+        {
+            var averageConsultantSalaryRangeIsBetween100Kand120K = EmployeeInfo.ConsultantSalaryRange(employees);
+            Assert.InRange(averageConsultantSalaryRangeIsBetween100Kand120K, 100000, 120000);
+        }
     }
 }

@@ -19,5 +19,14 @@
 
             return avgBrisbaneConsultantSalary;
         }
+        public static double TotalSalariesInPerth(IEnumerable<Employee> employees)
+        {
+            return 0;
+        }
+
+        public static double ConsultantSalaryRange(IEnumerable<Employee> employees)
+        {
+            return 0;
+        }
     }
 }
