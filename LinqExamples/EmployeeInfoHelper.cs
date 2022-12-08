@@ -10,6 +10,10 @@ namespace LinqExamples
     {
         // use this Extension method in your code to calculate average
         public static double AverageSalary(this IEnumerable<Employee> employees)
-            => employees.Select(x => x.Salary).Average();
+         => employees.Select(x => x.Salary).Average();
+
+        
     }
 }
+
+    
