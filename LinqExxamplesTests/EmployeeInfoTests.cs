@@ -25,6 +25,8 @@ namespace LinqExxamplesTests
         {
             var averageConsultantSalaryInBrisbane = EmployeeInfo.AverageConsultantSalaryInBrisbane(employees);
             Assert.Equal(110000, averageConsultantSalaryInBrisbane);
+          
+
         }
     }
 }
