@@ -4,12 +4,12 @@
     {
         public static IEnumerable<Employee> EmployeesWithSalaryGreaterThan100K(IEnumerable<Employee> employees)
         {
-            return employees;
+            return employees.Where(a => a.Salary > 100000);
         }
 
         public static double AverageConsultantSalaryInBrisbane(IEnumerable<Employee> employees)
         {
-            return 0;
+            return EmployeeInfoHelper.AverageSalary(employees.Where(a => a.City == "Brisbane" && a.Level == "Consultant"));
         }
     }
 }
